@@ -1,0 +1,9 @@
+[model]
+states = ["m", "n"]
+actions = ["c",  "d"]
+post_states = ["a", "b"]
+
+[equations]
+a = "m - (n - d**2)/2"
+b = "n/2 + d**2 + log(d)/pi"
+c = "1/(1 + exp(x))"
